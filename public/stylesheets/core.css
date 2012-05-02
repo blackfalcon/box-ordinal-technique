@@ -1,0 +1,112 @@
+html {
+	font-family: Arial;
+	font-weight: bold;
+}
+
+@media screen and (max-device-width: 320px) {
+	html {
+		font-size: 3em;
+		background: orange;
+	}
+}
+
+@media screen and (max-device-width: 480px) and (orientation : landscape) {
+	html {
+		font-size: 2em;
+		background: green;
+	}
+}
+
+section {
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+header, nav, article, aside, .example_ad, footer {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	color: white;
+	text-align: center;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+header {
+	background: blue;
+}
+
+nav {
+	background: green;
+}
+
+article {
+	background: aqua;
+	float: left;
+	width: 65%;
+}
+
+aside {
+	width: 30%;
+	float: right;
+	background: fuchsia;
+}
+
+.example_ad {
+	background: lime;
+	width: 30%;
+	float: right;
+}
+
+footer {
+	background: navy;
+	clear: both;
+}
+
+@media screen and (max-width: 1024px) {
+	header, nav, article, aside, .example_ad, footer {
+		box-ordinal-group: 1;
+		-moz-box-ordinal-group: 1;
+		-webkit-box-ordinal-group: 1;
+	}
+	header{
+		box-ordinal-group: 1;
+		-moz-box-ordinal-group: 1;
+		-webkit-box-ordinal-group: 1;
+	}
+	nav {
+		box-ordinal-group: 5;
+		-moz-box-ordinal-group: 5;
+		-webkit-box-ordinal-group: 5;
+	}
+	article {
+		box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;
+		-webkit-box-ordinal-group: 2;
+	}
+	aside {
+		box-ordinal-group: 3;
+		-moz-box-ordinal-group: 3;
+		-webkit-box-ordinal-group: 3;
+	}
+	.example_ad {
+		box-ordinal-group: 4;
+		-moz-box-ordinal-group: 4;
+		-webkit-box-ordinal-group: 4;
+	}
+	footer {
+		box-ordinal-group: 6;
+		-moz-box-ordinal-group: 6;
+		-webkit-box-ordinal-group: 6;
+	}
+	
+	
+	section {
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
+	}
+	article, aside, .example_ad {
+		float: none;
+		width: auto;
+	}
+}
