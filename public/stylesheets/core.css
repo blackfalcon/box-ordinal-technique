@@ -1,19 +1,33 @@
 html {
 	font-family: Arial;
 	font-weight: bold;
+	font-size: 1em;
 }
 
-@media screen and (max-device-width: 320px) {
+
+@media screen and (max-width: 50em) {
 	html {
-		font-size: 3em;
-		background: orange;
+		background: green;
 	}
 }
 
-@media screen and (max-device-width: 480px) and (orientation : landscape) {
+@media screen and (max-width: 30em) {
+	html {
+		background: blue;
+	}
+}
+
+@media screen and (max-device-width: 30em) and (orientation : landscape) {
 	html {
 		font-size: 2em;
-		background: green;
+		background: red;
+	}
+}
+
+@media screen and (max-width: 20em) {
+	html {
+		font-size: 3em;
+		background: orange;
 	}
 }
 
@@ -63,7 +77,7 @@ footer {
 	clear: both;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 30em) {
 	header, nav, article, aside, .example_ad, footer {
 		box-ordinal-group: 1;
 		-moz-box-ordinal-group: 1;
