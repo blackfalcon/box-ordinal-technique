@@ -1,5 +1,4 @@
 @import "mixins";
-@import "pixel-normalize";
 
 html {
 	font-family: Arial;
@@ -7,6 +6,9 @@ html {
 	font-size: 1em;
 	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
 }
+
+@import "pixel-normalize";
+
 
 /* illustrateive breakpoints */
 /* ------------------------ */
