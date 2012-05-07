@@ -1,0 +1,127 @@
+@import "mixins";
+
+html {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 1em;
+	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+}
+
+/* illustrateive breakpoints */
+/* ------------------------ */
+/* tablet portrait */
+@media  #{$tablet_portrait} {
+	html {
+		background: gray;
+	}
+}
+
+/* tablet landscape */
+@media #{$tablet_landscape} {
+	html {
+		background: red;
+	}
+}
+
+
+/* mobile portrait */
+@media #{$mobile_portrait} {
+	html {
+		background: yellow;
+	}
+}
+
+/* mobile landscape */
+@media #{$mobile_landscape} {
+	html {
+		background: orange;
+	}
+}
+
+
+
+
+/* General layout / design stuff */
+/* ----------------------------- */
+section {
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+header, nav, article, aside, .example_ad, footer {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	color: black;
+	text-align: center;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+header, nav, article, aside, .example_ad, footer {
+	box-shadow: 0px 0px 70px #8AA inset;
+	background: white;
+}
+
+article {
+	float: left;
+	width: 65%;
+	text-align: left;
+}
+
+aside {
+	width: 30%;
+	float: right;
+}
+
+.example_ad {
+	width: 30%;
+	float: right;
+	padding: 0;
+}
+
+.example_ad img {
+	width: 100%;
+	display: block;
+}
+
+footer {
+	clear: both;
+}
+
+
+/* this is where the magic happens */
+/* ------------------------------- */
+@media #{$mobile} {
+	header, nav, article, aside, .example_ad, footer {
+		@include box_ordinal_group(1);
+	}
+	header{
+		@include box_ordinal_group(1);
+	}
+	nav {
+		@include box_ordinal_group(5);
+	}
+	article {
+		@include box_ordinal_group(2);
+	}
+	aside {
+		@include box_ordinal_group(3);
+	}
+	.example_ad {
+		@include box_ordinal_group(4);
+	}
+	footer {
+		@include box_ordinal_group(6);
+	}
+	
+	
+	section {
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
+	}
+	article, aside, .example_ad {
+		float: none;
+		width: auto;
+	}
+}

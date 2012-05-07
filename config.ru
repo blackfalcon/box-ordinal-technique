@@ -1,3 +1,5 @@
+## This is what makes Heroku happy :D
+
 require './app'
 
 ## There is no need to set directories here anymore;
