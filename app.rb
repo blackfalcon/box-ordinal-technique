@@ -7,6 +7,8 @@ require 'bundler/setup'
 
 require 'sinatra'
 
+puts "This is process #{Process.pid}"
+
 
 # Wanna use Compass? Rock it!
 # ------------------------------------------
