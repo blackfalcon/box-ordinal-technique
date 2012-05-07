@@ -2,42 +2,40 @@ html {
 	font-family: Arial;
 	font-weight: bold;
 	font-size: 1em;
+	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
 }
 
-/* illustrateive breakpints */
+/* illustrateive breakpoints */
 /* ------------------------ */
-/*
-@media screen and (max-device-width: 50em) and (orientation : portrait) {
+/* tablet portrait */
+@media screen and (max-width: 50em) and (orientation : portrait) {
 	html {
-		font-size: 1.5em;
 		background: gray;
 	}
 }
 
-@media screen and (max-device-width: 50em) and (orientation : landscape) {
+/* tablet landscape */
+@media screen and (max-width: 50em) and (orientation : landscape) {
 	html {
 		background: red;
 	}
 }
 
 
-@media screen and (max-device-width: 30em) and (orientation : portrait) {
+/* mobile portrait */
+@media screen and (max-width: 30em) and (orientation : portrait) {
 	html {
-		font-size: 3em;
+		background: yellow;
 	}
 }
 
-@media screen and (max-device-width: 30em) and (orientation : landscape) {
+/* mobile landscape */
+@media screen and (max-width: 30em) and (orientation : landscape) {
 	html {
-		font-size: 2em;
 		background: orange;
 	}
 }
-*/
 
-
-/* illustrateive breakpints */
-/* ------------------------ */
 
 
 
@@ -92,7 +90,7 @@ footer {
 
 /* this is where the magic happens */
 /* ------------------------------- */
-@media screen and (max-device-width: 30em) {
+@media screen and (max-width: 30em) {
 	header, nav, article, aside, .example_ad, footer {
 		box-ordinal-group: 1;
 		-moz-box-ordinal-group: 1;
