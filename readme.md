@@ -1,6 +1,8 @@
 # Content Choreography
 This is a slimed down example of the great work done by [Jordan Moore](http://www.jordanm.co.uk/contentchoreography). The basic proof of concept is, how can we manage content placement depending on user experience?
 
+See example [http://box-ordinal.herokuapp.com/](http://box-ordinal.herokuapp.com/)
+
 ##What does it do?
 What was pretty awesome about Jordan's example was how the elements reordered depending on the user's device experience. Nice. Reading up on the techniques used in [W3Schools](http://www.w3schools.com/cssref/css3_pr_box-ordinal-group.asp) I recreated the example in a much simpler light. 
 
