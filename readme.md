@@ -17,12 +17,6 @@ section {
 	margin: 0 auto;
 }
 
-article {
-	background: aqua;
-	float: left;
-	width: 65%;
-}
-
 //browsers that support @media get this dash of awesome
 @media screen and (max-width: 1024px) {
 	
@@ -47,8 +41,12 @@ article {
 ```
 
 ##Key points to consider
-Some of the key points in the technique are:
 * All block elements that float only float above the @media breakpoint
 * It is only below the @media breakpoint that all floats are set to ``none``, widths set to ``auto`` and the parent block is instructed to use flexbox.
 
-Take a look at the code and hope this helps. And be sure to look for a sass version in the future :D
+##Sass 3.2 Bleeding Gem Warning!!! (see Gemfile)
+This project is leveraging a new feature if Sass for creating media query variables. This is a HUGE code saver!
+
+While this technique may not be the preferred, I am looking at you `@content`, this is an example of making a quick and dirty solution happen fast. 
+
+Take a look at the code and hope this helps. 
