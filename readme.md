@@ -1,6 +1,4 @@
-#Zombie Raiders
-
-## Content Choreography
+# Content Choreography
 This is a slimed down example of the great work done by [Jordan Moore](http://www.jordanm.co.uk/contentchoreography). The basic proof of concept is, how can we manage content placement depending on user experience?
 
 ##What does it do?
