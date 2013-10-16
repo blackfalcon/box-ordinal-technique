@@ -7,7 +7,9 @@ See example [http://box-ordinal.herokuapp.com/](http://box-ordinal.herokuapp.com
 What was pretty awesome about Jordan's example was how the elements reordered depending on the user's device experience. Nice. Reading up on the techniques used in [W3Schools](http://www.w3schools.com/cssref/css3_pr_box-ordinal-group.asp) I recreated the example in a much simpler light.
 
 ##Run the app
-Clone the app to your directory, a `.rvmrc.example` file is included in the project. To use a RVM sandbox, run `cp .rvmrc.example .rvmrc` and edit the name of the sandbox if needed.
+Clone the app to your directory, a `.rvmrc.example` file is included in the project. To use a RVM sandbox, run `cp .rvmrc.example .rvmrc && cd ../ && cd box-ordinal-technique`. Run `bundle install` to install the necessary gems. 
+
+To run the server, run `ruby app.rb` and view project on `http://localhost:4567/`
 
 ##Progressive enhancement meets adaptive design
 The key feature that makes this work is a combination of ``flexbox`` and ``box-ordinal-group``. Where we get progressive, all browsers that support these featured also support ``@media`` queries. 
