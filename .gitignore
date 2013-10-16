@@ -1,4 +1,5 @@
 .DS_store
+.rvmrc
 .sass-cache/
 log
 public/stylesheets/*

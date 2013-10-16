@@ -4,7 +4,10 @@ This is a slimed down example of the great work done by [Jordan Moore](http://ww
 See example [http://box-ordinal.herokuapp.com/](http://box-ordinal.herokuapp.com/)
 
 ##What does it do?
-What was pretty awesome about Jordan's example was how the elements reordered depending on the user's device experience. Nice. Reading up on the techniques used in [W3Schools](http://www.w3schools.com/cssref/css3_pr_box-ordinal-group.asp) I recreated the example in a much simpler light. 
+What was pretty awesome about Jordan's example was how the elements reordered depending on the user's device experience. Nice. Reading up on the techniques used in [W3Schools](http://www.w3schools.com/cssref/css3_pr_box-ordinal-group.asp) I recreated the example in a much simpler light.
+
+##Run the app
+Clone the app to your directory, a `.rvmrc.example` file is included in the project. To use a RVM sandbox, run `cp .rvmrc.example .rvmrc` and edit the name of the sandbox if needed.
 
 ##Progressive enhancement meets adaptive design
 The key feature that makes this work is a combination of ``flexbox`` and ``box-ordinal-group``. Where we get progressive, all browsers that support these featured also support ``@media`` queries. 
@@ -12,6 +15,7 @@ The key feature that makes this work is a combination of ``flexbox`` and ``box-o
 For basic layout I am using standard block elements and floats. To add this spice of awesome, using the ``@media`` query we are then removing the float, adding the flex and assigning layout order. 
 
 **Example code**
+
 ```scss
 // all browsers understand these base styles
 section {
