@@ -45,10 +45,3 @@ section {
 ##Key points to consider
 * All block elements that float only float above the @media breakpoint
 * It is only below the @media breakpoint that all floats are set to ``none``, widths set to ``auto`` and the parent block is instructed to use flexbox.
-
-##Sass 3.2 Bleeding Gem Warning!!! (see Gemfile)
-This project is leveraging a new feature if Sass for creating media query variables. This is a HUGE code saver!
-
-While this technique may not be the preferred, I am looking at you `@content`, this is an example of making a quick and dirty solution happen fast. 
-
-Take a look at the code and hope this helps. 
